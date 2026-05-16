@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "bedrock-knowledge-base": {
+      "command": "python",
+      "args": ["-m", "src.server"],
+      "cwd": "/path/to/mcp-server-bedrock-knowledge-base",
+      "env": {
+        "AWS_REGION": "us-west-2",
+        "AWS_PROFILE": "bedrock",
+        "BEDROCK_KB_IDS": "KB1234567890,KB0987654321",
+        "BEDROCK_KB_MODEL_ID": "arn:aws:bedrock:us-west-2::foundation-model/anthropic.claude-sonnet-4-20250514",
+        "BEDROCK_KB_LOG_LEVEL": "INFO"
+      }
+    }
+  }
+}
